@@ -1,0 +1,16 @@
+@import './variables.scss';
+@import './_color.scss';
+@import './_typography.scss';
+@import './_margin.scss';
+
+.green-border{
+  @include border(bottom,8px,solid,#7FB800);
+}
+
+// start header background index page
+.background-header-home-page{
+  background-image: url(../images/bg_element.svg);
+  background-position-x: 90%;
+  height: 925px;
+}
+// end header background index page
