@@ -22,46 +22,48 @@
       </v-toolbar>
       <!-- end toolbar -->
       <!-- start image header and text-header -->
-      <v-container class="mt-24">
+      <v-container class="mt-90">
         <v-row>
-          <v-col md="6" class="mb-10">
-            <v-lazy 
-            v-model="isActive"
-            :options="{
-            threshold: 1}"
-            transition="fade-transition"
-            >
-            <!-- start title -->
-            <h1 class="font-size-83"><span class="blue-gray-text">Eat CleanEat</span> <span class="green-light">Organic</span></h1>
-            <!-- end title -->
-            <!-- start content -->
-            <p>
-              Donec placerat, metus sed consectetur viverra, dolor nisl egestas ligula, ac gravida turpis orci eget quam. Aliquam nulla nisi, accumsan id sapien varius
-            </p>
-            <!-- end content -->
-            <!-- start button -->
-            <v-row class="mt-12">
-              <v-col cols="6">
-                <v-btn class="bg-green-darken-to-light white--text text-capitalize" rounded x-large>About kamran</v-btn>
-              </v-col>
-            </v-row>
-            <!-- end button -->
+          <v-col md="6">
+            <v-lazy v-model="isActive" :options="{threshold:.5}" transition="fade-transition">
+              <section>
+                <!-- start title -->
+                <h1 class="font-size-83"><span class="blue-gray-text">Eat CleanEat</span> <span class="green-light">Organic</span></h1>
+                <!-- end title -->
+                <!-- start content -->
+                <p>
+                  Donec placerat, metus sed consectetur viverra, dolor nisl egestas ligula, ac gravida turpis orci eget quam. Aliquam nulla nisi, accumsan id sapien varius
+                </p>
+                <!-- end content -->
+                <!-- start button -->
+                <div>
+                  <v-row>
+                    <v-col>
+                      <v-btn class="bg-green-darken-to-light white--text text-capitalize" rounded x-large>About kamran</v-btn>
+                    </v-col>
+                  </v-row>
+                </div>
+                <!-- end button -->
+              </section>
             </v-lazy>
           </v-col>
           <!-- start image -->
-          <v-col md="6">
+          <v-col md="6" class="pb-0">
             <v-img  src="/images/dates-6638825_1280 1.svg" max-width="664" max-height="442"/>
           </v-col>
           <!-- end image -->
         </v-row>
       </v-container>
     </section>
+    <!-- start render page -->
+    <nuxt/>
+    <!-- end render -->
   </v-app>
 </template>
 <script>
-  export default {
-    data: () => ({
+export default {
+  data: () => ({
       isActive: false,
-    }),
-  }
+  }),
+}
 </script>

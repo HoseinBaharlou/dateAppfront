@@ -18,10 +18,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {href:'https://fonts.googleapis.com',rel:'preconnect'},
       {href:'https://fonts.gstatic.com',rel:'preconnect'},
-      {link:'https://fonts.googleapis.com/css2?family=Rubik&display=swap',rel:'stylesheet'}
+      {link:'https://fonts.googleapis.com/css2?family=Rubik&display=swap',rel:'stylesheet'},
+      {rel:'stylesheet',link:'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'}
     ]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/main.scss'
