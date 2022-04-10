@@ -1,11 +1,14 @@
 // start margin
-@for $i from 13 to 25 {
+@for $i from 13 to 30 {
   .mb-#{$i*5}{
     margin-bottom: $i*5px !important;
   }
   .mt-#{$i*5}{
     margin-top: $i*5px !important;
   }
+  .mx-#{$i*5}{
+    margin-left: $i*5px;
+    margin-right: $i*5px;
+  }
 }
 // end margin
-

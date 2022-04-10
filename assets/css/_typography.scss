@@ -1,5 +1,5 @@
 //start font size
-@for $i from 8 to 90 {
+@for $i from 8 to 150 {
   .font-size-#{$i}{
     font-size:$i+px !important;
   }
