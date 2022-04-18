@@ -1,6 +1,5 @@
 <template>
-  <v-lazy v-model="isActive" :options="{threshold:.5}" transition="fade-transition" class="mt-75">
-    <section>
+  <section class="mt-75">
       <!-- start property -->
       <property />
       <!-- end property -->
@@ -24,8 +23,7 @@
       <!-- start blogsTips -->
       <blogs-tips />
       <!-- end blogsTips -->
-    </section>
-  </v-lazy>
+  </section>
 </template>
 
 <script>
