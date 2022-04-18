@@ -58,6 +58,8 @@
     <!-- start render page -->
     <nuxt/>
     <!-- end render -->
+
+
   </v-app>
 </template>
 <script>
