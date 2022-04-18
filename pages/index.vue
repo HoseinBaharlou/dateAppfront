@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import property from '../components/index/partials/property.vue'
-import aboutHome from '../components/index/partials/about.vue'
-import parallaxComponent from '../components/index/partials/parallax.vue'
-import SpecialSupport from '../components/index/partials/SpecialSupport.vue'
-import Testimonials from '../components/index/partials/Testimonials.vue'
-import blogsTips from '../components/index/partials/BlogsTips.vue'
+import property from '../components/partials/index/property.vue'
+import aboutHome from '../components/partials/index/about.vue'
+import parallaxComponent from '../components/partials/index/parallax.vue'
+import SpecialSupport from '../components/partials/index/SpecialSupport.vue'
+import Testimonials from '../components/partials/index/Testimonials.vue'
+import blogsTips from '../components/partials/index/BlogsTips.vue'
 export default {
   data: () => ({
       isActive: false,

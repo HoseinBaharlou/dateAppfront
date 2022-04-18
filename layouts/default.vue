@@ -27,7 +27,7 @@
 </template>
 <script>
 import Toolbar from '../components/common/toolbar.vue'
-import Header from '../components/index/partials/header.vue'
+import Header from '../components/partials/index/header.vue'
 import Footer from '../components/common/footer.vue'
 export default {
   data: () => ({
