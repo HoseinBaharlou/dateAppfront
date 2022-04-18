@@ -19,3 +19,26 @@
   background: linear-gradient(334.24deg, #7FB800 -9.84%, #0F9B0F 121.28%);
 }
 // end background icons
+
+// custom dot carousel 
+.slick-dots li.slick-active button{
+  width: 15px;
+  height: 15px;
+  background: #FAB522;
+  border-radius: 50px;
+}
+.slick-dots li button::before{
+  font-size: 12px;
+}
+.slick-active button::before{
+  display: none;
+}
+
+.custom-carousel .v-image{
+  z-index: unset !important;
+}
+.custom-carousel .v-sheet{
+  margin-top: -40px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

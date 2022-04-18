@@ -153,20 +153,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .custom-title{
   border-bottom: 2px solid #7FB800;
-}
-.slick-dots li.slick-active button{
-  width: 15px;
-  height: 15px;
-  background: #FAB522;
-  border-radius: 50px;
-}
-.slick-dots li button::before{
-  font-size: 12px;
-}
-.slick-active button::before{
-  display: none;
 }
 </style>
