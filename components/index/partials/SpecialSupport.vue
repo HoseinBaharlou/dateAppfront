@@ -32,7 +32,7 @@
             color="light-green accent-4"
             class="mx-8"
             >
-            <span class="black--text">80%</span>
+            <span class="black--text"></span>
             </v-progress-circular>
             <p class="text-center mt-4"></p>
           </div>
@@ -68,10 +68,105 @@
         <!-- end progress -->
       </v-col>
     </v-row>
+
+    <v-row class="mt-100">
+      <v-col cols="12">
+        <!-- start group slider -->
+        <VueSlickCarousel v-bind="settings">
+          <div class="px-1">
+            <v-img src="images/dates-1067265_1920 1.svg"/>
+          </div>
+          <div class="px-1">
+            <v-img src="images/palma-1454793_1920 1.svg"/>
+          </div>
+          <div class="px-1">
+            <v-img src="images/dates-1067265_1920 1.svg"/>
+          </div>
+          <div class="px-1">
+            <v-img src="images/palma-1454793_1920 1.svg"/>
+          </div>
+          <div class="px-1">
+            <v-img src="images/dates-1067265_1920 1.svg"/>
+          </div>
+          <div class="px-1">
+            <v-img src="images/dates-1067265_1920 1.svg"/>
+          </div>
+          <div class="px-1">
+            <v-img src="images/palma-1454793_1920 1.svg"/>
+          </div>
+          <div class="px-1">
+            <v-img src="images/dates-1067265_1920 1.svg"/>
+          </div>
+        </VueSlickCarousel>
+        <!-- end group slider -->
+      </v-col>
+    </v-row>
   </v-container>
 </template>
-<style scoped>
+<script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
+export default {
+  components:{VueSlickCarousel},
+  data:()=>{
+    return{
+      settings:{
+        "dots": true,
+        "infinite": false,
+        "arrows":false,
+        "speed": 500,
+        "slidesToShow": 5,
+        "slidesToScroll": 5,
+        "initialSlide": 0,
+        "responsive": [
+          {
+            "breakpoint": 1024,
+            "settings": {
+              "slidesToShow": 3,
+              "slidesToScroll": 3,
+              "infinite": false,
+              "dots": true
+            }
+          },
+          {
+            "breakpoint": 600,
+            "settings": {
+              "slidesToShow": 2,
+              "slidesToScroll": 2,
+              "initialSlide": 2
+            }
+          },
+          {
+            "breakpoint": 480,
+            "settings": {
+              "slidesToShow": 1,
+              "slidesToScroll": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+</script>
+
+<style>
 .custom-title{
   border-bottom: 2px solid #7FB800;
+}
+.slick-dots li.slick-active button{
+  width: 15px;
+  height: 15px;
+  background: #FAB522;
+  border-radius: 50px;
+}
+.slick-dots li button::before{
+  font-size: 12px;
+}
+.slick-active button::before{
+  display: none;
 }
 </style>
