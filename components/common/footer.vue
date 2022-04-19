@@ -4,12 +4,12 @@
     <v-container>
       <v-row class="d-flex align-center">
         <!-- start about -->
-        <v-col cols="6">
+        <v-col cols="12" md="6">
           <section>
             <!-- start icons -->
             <div class="d-flex align-center">
               <v-img src="icons/Object.svg" max-height="65" max-width="65" />
-              <h2 class="font-weight-regular font-size-37 ml-2">kamran</h2>
+              <h2 class="font-weight-regular font-size-37 ml-2">Hossein</h2>
             </div>
             <!-- end icons -->
             <!-- start desciption -->
@@ -27,22 +27,22 @@
             <!-- end social media -->
 
             <!-- start about programmer -->
-            <p class="my-15">kamran <span class="grey--text">&copy; kamran Template All rights reserved Copyrights 2020</span></p>
+            <p class="my-15">Hossein <span class="grey--text">&copy; Hossein Template All rights reserved Copyrights 2020</span></p>
             <!-- end about programmer -->
           </section>
         </v-col>
         <!-- end about -->
 
         <!-- start sign up to newslatter -->
-        <v-col cols="6">
+        <v-col cols="12" md="6">
           <v-card class="bg-green-darken-to-light rounded-t-xl px-15" elevation="0">
             <!-- start title and subtitle-->
             <v-card-title class="mt-16 d-flex justify-center">
               <section>
-                <h1 class="font-size-42 font-famyle-rubik white--text mt-140 text-center">
+                <h1 class="font-size-42 font-famyle-rubik white--text mt-140 text-center line-height-45">
                 Be informed!
                 </h1>
-                <h2 class="font-size-42 font-famyle-rubik font-weight-regular white--text text-center mt-5">
+                <h2 class="font-size-42 font-famyle-rubik font-weight-regular white--text text-center line-height-45 mt-2">
                   Sign up for newsletter
                 </h2>
               </section>

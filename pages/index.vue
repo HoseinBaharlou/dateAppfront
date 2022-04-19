@@ -37,6 +37,7 @@ export default {
   data: () => ({
       isActive: false,
   }),
+  layout:'home',
   components:{property,aboutHome,parallaxComponent,SpecialSupport,Testimonials,blogsTips}
 }
 </script>
