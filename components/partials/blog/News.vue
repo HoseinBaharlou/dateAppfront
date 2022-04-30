@@ -220,7 +220,18 @@
     </v-col>
     <!-- end news -->
     <!-- start cards and search box -->
-    <v-col md="4">
+    <v-col md="4" class="News">
+      <div class="d-flex">
+      <v-text-field 
+      filled
+      placeholder="search..."
+      class="rounded-l-xl rounded-r-0"
+      outlined
+      rounded
+      height="56"
+      dense></v-text-field>
+      <v-btn class="bg-green-darken-to-light rounded-l-0 rounded-r-xl white--text text-capitalize" elevation="0" height="56">search</v-btn>
+      </div>
       <v-card class="rounded-xl custom-box-shadow">
         <!-- start title -->
         <v-card-title class="px-10 py-10 pb-1">
@@ -377,7 +388,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .custom-box-shadow{
     box-shadow: 0px 0px 15px rgba(127, 184, 0, 0.15) !important;
   }
